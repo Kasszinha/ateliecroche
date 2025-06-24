@@ -10,46 +10,43 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white font-modern">
+<body class="bg-white text-gray-900 font-modern">
     <!-- Header -->
-    <header class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-rose-200">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="text-2xl font-bold gradient-text">AC</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="hover:text-amber-500 transition-colors">Home</a>
-                    <a href="loja.html" class="hover:text-amber-500 transition-colors">Loja</a>
-                    <a href="logomarca.html" class="hover:text-amber-500 transition-colors">Logomarca</a>
-                    <a href="atelie.html" class="text-amber-500 font-semibold">Ateliê</a>
-                    <a href="contato.html" class="hover:text-amber-500 transition-colors">Contato</a>
+                    <a href="index.html" class="hover:text-rose-500 transition-colors text-gray-700">Home</a>
+                    <a href="loja.html" class="hover:text-rose-500 transition-colors text-gray-700">Loja</a>
+                    <a href="logomarca.html" class="hover:text-rose-500 transition-colors text-gray-700">Logomarca</a>
+                    <a href="atelie.html" class="text-rose-500 font-semibold">Ateliê</a>
+                    <a href="contato.html" class="hover:text-rose-500 transition-colors text-gray-700">Contato</a>
                 </div>
-                <button class="md:hidden text-white" onclick="toggleMenu()">
+                <button class="md:hidden text-gray-900" onclick="toggleMenu()">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Home</a>
-                    <a href="loja.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Loja</a>
-                    <a href="logomarca.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Logomarca</a>
-                    <a href="atelie.html" class="text-amber-500 font-semibold" onclick="toggleMenu()">Ateliê</a>
-                    <a href="contato.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Contato</a>
+                    <a href="index.html" class="hover:text-rose-500 transition-colors text-gray-700" onclick="toggleMenu()">Home</a>
+                    <a href="loja.html" class="hover:text-rose-500 transition-colors text-gray-700" onclick="toggleMenu()">Loja</a>
+                    <a href="logomarca.html" class="hover:text-rose-500 transition-colors text-gray-700" onclick="toggleMenu()">Logomarca</a>
+                    <a href="atelie.html" class="text-rose-500 font-semibold" onclick="toggleMenu()">Ateliê</a>
+                    <a href="contato.html" class="hover:text-rose-500 transition-colors text-gray-700" onclick="toggleMenu()">Contato</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- ===== SEÇÃO HERO DO ATELIÊ =====
-         Apresentação do ateliê e filosofia
-    -->
-    <section class="pt-32 pb-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <section class="pt-32 pb-20 bg-gradient-to-br from-rose-50 via-white to-rose-50">
         <div class="container mx-auto px-6 text-center">
             <div class="animate-fade-in">
                 <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">Nosso Ateliê</h1>
-                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
                     Onde a magia acontece: tradição, técnica e paixão se encontram para criar peças únicas e especiais.
                 </p>
-                <div class="flex justify-center space-x-8 text-amber-500">
+                <div class="flex justify-center space-x-8 text-rose-400">
                     <div class="text-center">
                         <i class="fas fa-heart text-3xl mb-2"></i>
                         <p class="text-sm">Feito com Amor</p>
@@ -67,77 +64,69 @@
         </div>
     </section>
 
-    <!-- ===== SEÇÃO PROCESSO ARTESANAL =====
-         Detalhamento do processo de criação
-    -->
-    <section class="py-20 bg-gray-800">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Nosso Processo</h2>
-                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Cada peça passa por um cuidadoso processo artesanal que garante qualidade e exclusividade
                 </p>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-                <!-- Lado Esquerdo: Processo -->
                 <div class="animate-on-scroll">
-                    <h3 class="text-3xl font-bold mb-8 text-amber-500">Etapas da Criação</h3>
+                    <h3 class="text-3xl font-bold mb-8 text-rose-400">Etapas da Criação</h3>
                     <div class="space-y-8">
-                        <!-- Etapa 1 -->
                         <div class="flex items-start space-x-6">
-                            <div class="bg-amber-600 p-4 rounded-full flex-shrink-0 relative">
+                            <div class="bg-rose-400 p-4 rounded-full flex-shrink-0 relative">
                                 <i class="fas fa-lightbulb text-white text-xl"></i>
-                                <div class="absolute -top-2 -right-2 bg-amber-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">1</div>
+                                <div class="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">1</div>
                             </div>
                             <div>
-                                <h4 class="text-2xl font-semibold mb-3 text-white">Inspiração & Design</h4>
-                                <p class="text-gray-300 text-lg leading-relaxed">
+                                <h4 class="text-2xl font-semibold mb-3 text-gray-800">Inspiração & Design</h4>
+                                <p class="text-gray-600 text-lg leading-relaxed">
                                     Tudo começa com uma ideia. Buscamos inspiração na natureza, nas tendências e, principalmente, 
                                     nas necessidades dos nossos clientes para criar designs únicos e funcionais.
                                 </p>
                             </div>
                         </div>
                         
-                        <!-- Etapa 2 -->
                         <div class="flex items-start space-x-6">
-                            <div class="bg-amber-600 p-4 rounded-full flex-shrink-0 relative">
+                            <div class="bg-rose-400 p-4 rounded-full flex-shrink-0 relative">
                                 <i class="fas fa-cut text-white text-xl"></i>
-                                <div class="absolute -top-2 -right-2 bg-amber-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">2</div>
+                                <div class="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">2</div>
                             </div>
                             <div>
-                                <h4 class="text-2xl font-semibold mb-3 text-white">Seleção de Materiais</h4>
-                                <p class="text-gray-300 text-lg leading-relaxed">
+                                <h4 class="text-2xl font-semibold mb-3 text-gray-800">Seleção de Materiais</h4>
+                                <p class="text-gray-600 text-lg leading-relaxed">
                                     Escolhemos cuidadosamente cada fio, botão e acessório. Priorizamos materiais de alta qualidade, 
                                     sustentáveis e que proporcionem conforto e durabilidade às nossas peças.
                                 </p>
                             </div>
                         </div>
                         
-                        <!-- Etapa 3 -->
                         <div class="flex items-start space-x-6">
-                            <div class="bg-amber-600 p-4 rounded-full flex-shrink-0 relative">
+                            <div class="bg-rose-400 p-4 rounded-full flex-shrink-0 relative">
                                 <i class="fas fa-hands text-white text-xl"></i>
-                                <div class="absolute -top-2 -right-2 bg-amber-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">3</div>
+                                <div class="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">3</div>
                             </div>
                             <div>
-                                <h4 class="text-2xl font-semibold mb-3 text-white">Criação Manual</h4>
-                                <p class="text-gray-300 text-lg leading-relaxed">
+                                <h4 class="text-2xl font-semibold mb-3 text-gray-800">Criação Manual</h4>
+                                <p class="text-gray-600 text-lg leading-relaxed">
                                     Utilizamos técnicas tradicionais de crochê, tricô e costura, passadas de geração em geração. 
                                     Cada ponto é feito com cuidado e atenção aos detalhes.
                                 </p>
                             </div>
                         </div>
                         
-                        <!-- Etapa 4 -->
                         <div class="flex items-start space-x-6">
-                            <div class="bg-amber-600 p-4 rounded-full flex-shrink-0 relative">
+                            <div class="bg-rose-400 p-4 rounded-full flex-shrink-0 relative">
                                 <i class="fas fa-star text-white text-xl"></i>
-                                <div class="absolute -top-2 -right-2 bg-amber-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">4</div>
+                                <div class="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">4</div>
                             </div>
                             <div>
-                                <h4 class="text-2xl font-semibold mb-3 text-white">Acabamento Premium</h4>
-                                <p class="text-gray-300 text-lg leading-relaxed">
+                                <h4 class="text-2xl font-semibold mb-3 text-gray-800">Acabamento Premium</h4>
+                                <p class="text-gray-600 text-lg leading-relaxed">
                                     Cada detalhe é cuidadosamente finalizado. Fazemos revisões minuciosas para garantir 
                                     que cada peça atenda aos nossos altos padrões de qualidade.
                                 </p>
@@ -146,50 +135,44 @@
                     </div>
                 </div>
                 
-                <!-- Lado Direito: Galeria de Materiais -->
                 <div class="animate-on-scroll">
-                    <h3 class="text-3xl font-bold mb-8 text-amber-500">Nossos Materiais</h3>
+                    <h3 class="text-3xl font-bold mb-8 text-rose-400">Nossos Materiais</h3>
                     <div class="grid grid-cols-2 gap-6">
-                        <!-- Material 1: Fios -->
-                        <div class="bg-gradient-to-br from-amber-600 to-amber-800 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover">
-                            <i class="fas fa-yarn text-5xl text-white mb-3"></i>
-                            <h4 class="text-lg font-semibold text-white">Fios Premium</h4>
-                            <p class="text-sm text-amber-100 text-center">Algodão, lã e fibras especiais</p>
+                        <div class="bg-gradient-to-br from-rose-400 to-rose-500 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover text-white shadow-lg">
+                            <i class="fas fa-yarn text-5xl mb-3"></i>
+                            <h4 class="text-lg font-semibold">Fios Premium</h4>
+                            <p class="text-sm text-center opacity-90">Algodão, lã e fibras especiais</p>
                         </div>
                         
-                        <!-- Material 2: Ferramentas -->
-                        <div class="bg-gradient-to-br from-purple-600 to-purple-800 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover">
-                            <i class="fas fa-scissors text-5xl text-white mb-3"></i>
-                            <h4 class="text-lg font-semibold text-white">Ferramentas</h4>
-                            <p class="text-sm text-purple-100 text-center">Agulhas, tesouras e acessórios</p>
+                        <div class="bg-gradient-to-br from-purple-600 to-purple-800 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover text-white shadow-lg">
+                            <i class="fas fa-scissors text-5xl mb-3"></i>
+                            <h4 class="text-lg font-semibold">Ferramentas</h4>
+                            <p class="text-sm text-center opacity-90">Agulhas, tesouras e acessórios</p>
                         </div>
                         
-                        <!-- Material 3: Agulhas -->
-                        <div class="bg-gradient-to-br from-green-600 to-green-800 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover">
-                            <i class="fas fa-sewing-needle text-5xl text-white mb-3"></i>
-                            <h4 class="text-lg font-semibold text-white">Agulhas</h4>
-                            <p class="text-sm text-green-100 text-center">Diversos tamanhos e tipos</p>
+                        <div class="bg-gradient-to-br from-green-600 to-green-800 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover text-white shadow-lg">
+                            <i class="fas fa-sewing-needle text-5xl mb-3"></i>
+                            <h4 class="text-lg font-semibold">Agulhas</h4>
+                            <p class="text-sm text-center opacity-90">Diversos tamanhos e tipos</p>
                         </div>
                         
-                        <!-- Material 4: Acessórios -->
-                        <div class="bg-gradient-to-br from-pink-600 to-pink-800 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover">
-                            <i class="fas fa-gem text-5xl text-white mb-3"></i>
-                            <h4 class="text-lg font-semibold text-white">Acessórios</h4>
-                            <p class="text-sm text-pink-100 text-center">Botões, fitas e detalhes</p>
+                        <div class="bg-gradient-to-br from-pink-600 to-pink-800 h-48 rounded-lg flex flex-col items-center justify-center p-4 card-hover text-white shadow-lg">
+                            <i class="fas fa-gem text-5xl mb-3"></i>
+                            <h4 class="text-lg font-semibold">Acessórios</h4>
+                            <p class="text-sm text-center opacity-90">Botões, fitas e detalhes</p>
                         </div>
                     </div>
                     
-                    <!-- Informações Adicionais -->
-                    <div class="mt-8 bg-gray-700 p-6 rounded-lg">
-                        <h4 class="text-xl font-semibold mb-4 text-amber-500">
+                    <div class="mt-8 bg-rose-50 p-6 rounded-lg border border-rose-100">
+                        <h4 class="text-xl font-semibold mb-4 text-rose-400">
                             <i class="fas fa-leaf mr-2"></i>
                             Compromisso Sustentável
                         </h4>
-                        <ul class="space-y-2 text-gray-300">
-                            <li><i class="fas fa-check text-amber-500 mr-2"></i> Materiais eco-friendly sempre que possível</li>
-                            <li><i class="fas fa-check text-amber-500 mr-2"></i> Fornecedores locais e responsáveis</li>
-                            <li><i class="fas fa-check text-amber-500 mr-2"></i> Redução de desperdícios no processo</li>
-                            <li><i class="fas fa-check text-amber-500 mr-2"></i> Embalagens recicláveis</li>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><i class="fas fa-check text-rose-400 mr-2"></i> Materiais eco-friendly sempre que possível</li>
+                            <li><i class="fas fa-check text-rose-400 mr-2"></i> Fornecedores locais e responsáveis</li>
+                            <li><i class="fas fa-check text-rose-400 mr-2"></i> Redução de desperdícios no processo</li>
+                            <li><i class="fas fa-check text-rose-400 mr-2"></i> Embalagens recicláveis</li>
                         </ul>
                     </div>
                 </div>
@@ -197,115 +180,106 @@
         </div>
     </section>
 
-    <!-- ===== SEÇÃO TÉCNICAS ARTESANAIS =====
-         Apresentação das técnicas utilizadas
-    -->
-    <section class="py-20 bg-gray-900">
+    <section class="py-20 bg-rose-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Técnicas Tradicionais</h2>
-                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Dominamos diversas técnicas artesanais, preservando tradições e criando peças atemporais
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Técnica 1: Crochê -->
-                <div class="bg-gray-800 p-8 rounded-lg text-center card-hover animate-on-scroll">
-                    <div class="bg-amber-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                <div class="bg-white p-8 rounded-lg text-center card-hover animate-on-scroll shadow-lg border border-rose-100">
+                    <div class="bg-rose-400 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-circle-notch text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-amber-500">Crochê</h3>
-                    <p class="text-gray-300 mb-6">
+                    <h3 class="text-2xl font-bold mb-4 text-rose-400">Crochê</h3>
+                    <p class="text-gray-600 mb-6">
                         Técnica versátil que permite criar desde peças delicadas até estruturas mais robustas. 
                         Ideal para blusas, acessórios e decoração.
                     </p>
-                    <div class="space-y-2 text-sm text-gray-400">
-                        <p><i class="fas fa-star text-amber-500 mr-2"></i> Pontos básicos e avançados</p>
-                        <p><i class="fas fa-star text-amber-500 mr-2"></i> Texturas variadas</p>
-                        <p><i class="fas fa-star text-amber-500 mr-2"></i> Acabamentos profissionais</p>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <p><i class="fas fa-star text-rose-400 mr-2"></i> Pontos básicos e avançados</p>
+                        <p><i class="fas fa-star text-rose-400 mr-2"></i> Texturas variadas</p>
+                        <p><i class="fas fa-star text-rose-400 mr-2"></i> Acabamentos profissionais</p>
                     </div>
                 </div>
                 
-                <!-- Técnica 2: Tricô -->
-                <div class="bg-gray-800 p-8 rounded-lg text-center card-hover animate-on-scroll">
+                <div class="bg-white p-8 rounded-lg text-center card-hover animate-on-scroll shadow-lg border border-rose-100">
                     <div class="bg-purple-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-grip-lines text-white text-3xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-purple-400">Tricô</h3>
-                    <p class="text-gray-300 mb-6">
+                    <p class="text-gray-600 mb-6">
                         Perfeito para peças de inverno e itens que precisam de elasticidade. 
                         Criamos desde cachecóis até casacos elaborados.
                     </p>
-                    <div class="space-y-2 text-sm text-gray-400">
+                    <div class="space-y-2 text-sm text-gray-500">
                         <p><i class="fas fa-star text-purple-400 mr-2"></i> Pontos tradicionais</p>
                         <p><i class="fas fa-star text-purple-400 mr-2"></i> Tramas complexas</p>
                         <p><i class="fas fa-star text-purple-400 mr-2"></i> Modelagem precisa</p>
                     </div>
                 </div>
                 
-                <!-- Técnica 3: Costura */
-                <div class="bg-gray-800 p-8 rounded-lg text-center card-hover animate-on-scroll">
+                <div class="bg-white p-8 rounded-lg text-center card-hover animate-on-scroll shadow-lg border border-rose-100">
                     <div class="bg-green-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-cut text-white text-3xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-green-400">Costura</h3>
-                    <p class="text-gray-300 mb-6">
+                    <p class="text-gray-600 mb-6">
                         Fundamental para acabamentos e união de peças. Garantimos costuras resistentes 
                         e esteticamente perfeitas.
                     </p>
-                    <div class="space-y-2 text-sm text-gray-400">
+                    <div class="space-y-2 text-sm text-gray-500">
                         <p><i class="fas fa-star text-green-400 mr-2"></i> Costuras invisíveis</p>
                         <p><i class="fas fa-star text-green-400 mr-2"></i> Reforços estratégicos</p>
                         <p><i class="fas fa-star text-green-400 mr-2"></i> Acabamentos limpos</p>
                     </div>
                 </div>
                 
-                <!-- Técnica 4: Bordado -->
-                <div class="bg-gray-800 p-8 rounded-lg text-center card-hover animate-on-scroll">
+                <div class="bg-white p-8 rounded-lg text-center card-hover animate-on-scroll shadow-lg border border-rose-100">
                     <div class="bg-pink-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-paint-brush text-white text-3xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-pink-400">Bordado</h3>
-                    <p class="text-gray-300 mb-6">
+                    <p class="text-gray-600 mb-6">
                         Adicionamos detalhes únicos e personalizações através de bordados artísticos 
                         que tornam cada peça especial.
                     </p>
-                    <div class="space-y-2 text-sm text-gray-400">
+                    <div class="space-y-2 text-sm text-gray-500">
                         <p><i class="fas fa-star text-pink-400 mr-2"></i> Desenhos personalizados</p>
                         <p><i class="fas fa-star text-pink-400 mr-2"></i> Múltiplas cores</p>
                         <p><i class="fas fa-star text-pink-400 mr-2"></i> Técnicas variadas</p>
                     </div>
                 </div>
                 
-                <!-- Técnica 5: Macramê -->
-                <div class="bg-gray-800 p-8 rounded-lg text-center card-hover animate-on-scroll">
+                <div class="bg-white p-8 rounded-lg text-center card-hover animate-on-scroll shadow-lg border border-rose-100">
                     <div class="bg-blue-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-project-diagram text-white text-3xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-blue-400">Macramê</h3>
-                    <p class="text-gray-300 mb-6">
+                    <p class="text-gray-600 mb-6">
                         Arte dos nós que permite criar peças decorativas e funcionais com texturas 
                         únicas e designs geométricos.
                     </p>
-                    <div class="space-y-2 text-sm text-gray-400">
+                    <div class="space-y-2 text-sm text-gray-500">
                         <p><i class="fas fa-star text-blue-400 mr-2"></i> Nós tradicionais</p>
                         <p><i class="fas fa-star text-blue-400 mr-2"></i> Padrões geométricos</p>
                         <p><i class="fas fa-star text-blue-400 mr-2"></i> Peças decorativas</p>
                     </div>
                 </div>
                 
-                <!-- Técnica 6: Patchwork -->
-                <div class="bg-gray-800 p-8 rounded-lg text-center card-hover animate-on-scroll">
+                <div class="bg-white p-8 rounded-lg text-center card-hover animate-on-scroll shadow-lg border border-rose-100">
                     <div class="bg-red-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-th text-white text-3xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-red-400">Patchwork</h3>
-                    <p class="text-gray-300 mb-6">
+                    <p class="text-gray-600 mb-6">
                         Combinamos diferentes tecidos e texturas para criar composições únicas, 
                         aproveitando materiais e criando designs exclusivos.
                     </p>
-                    <div class="space-y-2 text-sm text-gray-400">
+                    <div class="space-y-2 text-sm text-gray-500">
                         <p><i class="fas fa-star text-red-400 mr-2"></i> Combinações criativas</p>
                         <p><i class="fas fa-star text-red-400 mr-2"></i> Reaproveitamento</p>
                         <p><i class="fas fa-star text-red-400 mr-2"></i> Designs únicos</p>
@@ -315,261 +289,77 @@
         </div>
     </section>
 
-    <!-- ===== SEÇÃO ENCOMENDAS PERSONALIZADAS =====
-         Como funcionam as encomendas
-    -->
-    <section class="py-20 bg-gray-800">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Encomendas Personalizadas</h2>
-                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Criamos a peça dos seus sonhos do zero. Cada encomenda é única e feita especialmente para você.
                 </p>
             </div>
             
-            <!-- Processo de Encomenda -->
-            <div class="bg-gray-700 rounded-lg p-8 mb-12 animate-on-scroll">
-                <h3 class="text-3xl font-bold mb-8 text-amber-500 text-center">Como Funciona</h3>
+            <div class="bg-rose-50 rounded-lg p-8 mb-12 animate-on-scroll border border-rose-100">
+                <h3 class="text-3xl font-bold mb-8 text-rose-400 text-center">Como Funciona</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Passo 1 -->
                     <div class="text-center">
-                        <div class="bg-amber-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 relative">
+                        <div class="bg-rose-400 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 relative">
                             <i class="fas fa-comments text-white text-2xl"></i>
-                            <div class="absolute -top-2 -right-2 bg-amber-500 text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">1</div>
+                            <div class="absolute -top-2 -right-2 bg-rose-500 text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">1</div>
                         </div>
-                        <h4 class="text-2xl font-semibold mb-4 text-white">Consulta Inicial</h4>
-                        <p class="text-gray-300 text-lg leading-relaxed">
+                        <h4 class="text-2xl font-semibold mb-4 text-gray-800">Consulta Inicial</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed">
                             Conversamos sobre sua ideia, necessidades, medidas e preferências de cores e materiais. 
                             Definimos todos os detalhes do projeto.
                         </p>
-                        <div class="mt-4 p-3 bg-gray-600 rounded-lg">
-                            <p class="text-sm text-gray-300">
-                                <i class="fas fa-clock text-amber-500 mr-2"></i>
+                        <div class="mt-4 p-3 bg-white rounded-lg border border-rose-200">
+                            <p class="text-sm text-gray-600">
+                                <i class="fas fa-clock text-rose-400 mr-2"></i>
                                 Duração: 30-60 minutos
                             </p>
                         </div>
                     </div>
                     
-                    <!-- Passo 2 -->
                     <div class="text-center">
-                        <div class="bg-amber-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 relative">
+                        <div class="bg-rose-400 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 relative">
                             <i class="fas fa-drafting-compass text-white text-2xl"></i>
-                            <div class="absolute -top-2 -right-2 bg-amber-500 text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">2</div>
+                            <div class="absolute -top-2 -right-2 bg-rose-500 text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">2</div>
                         </div>
-                        <h4 class="text-2xl font-semibold mb-4 text-white">Desenvolvimento</h4>
-                        <p class="text-gray-300 text-lg leading-relaxed">
+                        <h4 class="text-2xl font-semibold mb-4 text-gray-800">Desenvolvimento</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed">
                             Desenvolvemos sua peça única com todo cuidado e atenção aos detalhes. 
                             Mantemos você informado sobre o progresso.
                         </p>
-                        <div class="mt-4 p-3 bg-gray-600 rounded-lg">
-                            <p class="text-sm text-gray-300">
-                                <i class="fas fa-clock text-amber-500 mr-2"></i>
+                        <div class="mt-4 p-3 bg-white rounded-lg border border-rose-200">
+                            <p class="text-sm text-gray-600">
+                                <i class="fas fa-clock text-rose-400 mr-2"></i>
                                 Duração: 1-4 semanas
                             </p>
                         </div>
                     </div>
                     
-                    <!-- Passo 3 -->
                     <div class="text-center">
-                        <div class="bg-amber-600 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 relative">
+                        <div class="bg-rose-400 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 relative">
                             <i class="fas fa-gift text-white text-2xl"></i>
-                            <div class="absolute -top-2 -right-2 bg-amber-500 text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">3</div>
+                            <div class="absolute -top-2 -right-2 bg-rose-500 text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">3</div>
                         </div>
-                        <h4 class="text-2xl font-semibold mb-4 text-white">Entrega Especial</h4>
-                        <p class="text-gray-300 text-lg leading-relaxed">
+                        <h4 class="text-2xl font-semibold mb-4 text-gray-800">Entrega Especial</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed">
                             Sua peça é cuidadosamente embalada e entregue com todo carinho. 
                             Incluímos instruções de cuidado e certificado de autenticidade.
                         </p>
-                        <div class="mt-4 p-3 bg-gray-600 rounded-lg">
-                            <p class="text-sm text-gray-300">
-                                <i class="fas fa-truck text-amber-500 mr-2"></i>
+                        <div class="mt-4 p-3 bg-white rounded-lg border border-rose-200">
+                            <p class="text-sm text-gray-600">
+                                <i class="fas fa-truck text-rose-400 mr-2"></i>
                                 Entrega em todo Brasil
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Tipos de Encomendas -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-on-scroll">
-                <!-- Tipo 1: Roupas -->
-                <div class="bg-gray-700 p-6 rounded-lg text-center card-hover">
-                    <i class="fas fa-tshirt text-4xl text-amber-500 mb-4"></i>
-                    <h4 class="text-xl font-semibold mb-3 text-white">Roupas</h4>
-                    <ul class="text-gray-300 text-sm space-y-1">
-                        <li>Blusas e casacos</li>
-                        <li>Vestidos únicos</li>
-                        <li>Peças de inverno</li>
-                        <li>Uniformes especiais</li>
-                    </ul>
-                </div>
-                
-                <!-- Tipo 2: Acessórios -->
-                <div class="bg-gray-700 p-6 rounded-lg text-center card-hover">
-                    <i class="fas fa-hat-cowboy text-4xl text-purple-500 mb-4"></i>
-                    <h4 class="text-xl font-semibold mb-3 text-white">Acessórios</h4>
-                    <ul class="text-gray-300 text-sm space-y-1">
-                        <li>Bolsas e carteiras</li>
-                        <li>Chapéus e gorros</li>
-                        <li>Cachecóis e luvas</li>
-                        <li>Joias artesanais</li>
-                    </ul>
-                </div>
-                
-                <!-- Tipo 3: Bebê -->
-                <div class="bg-gray-700 p-6 rounded-lg text-center card-hover">
-                    <i class="fas fa-baby text-4xl text-pink-500 mb-4"></i>
-                    <h4 class="text-xl font-semibold mb-3 text-white">Enxoval Bebê</h4>
-                    <ul class="text-gray-300 text-sm space-y-1">
-                        <li>Conjuntos completos</li>
-                        <li>Mantas e cobertores</li>
-                        <li>Sapatinhos</li>
-                        <li>Brinquedos de tecido</li>
-                    </ul>
-                </div>
-                
-                <!-- Tipo 4: Decoração -->
-                <div class="bg-gray-700 p-6 rounded-lg text-center card-hover">
-                    <i class="fas fa-home text-4xl text-green-500 mb-4"></i>
-                    <h4 class="text-xl font-semibold mb-3 text-white">Decoração</h4>
-                    <ul class="text-gray-300 text-sm space-y-1">
-                        <li>Almofadas personalizadas</li>
-                        <li>Tapetes artesanais</li>
-                        <li>Cortinas únicas</li>
-                        <li>Peças decorativas</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Call to Action -->
-            <div class="text-center mt-12 animate-on-scroll">
-                <div class="bg-gradient-to-r from-amber-600 to-amber-700 p-8 rounded-lg">
-                    <h3 class="text-3xl font-bold mb-4 text-white">Pronto para Criar Sua Peça Única?</h3>
-                    <p class="text-xl mb-6 text-amber-100">
-                        Entre em contato conosco e vamos transformar sua ideia em realidade!
-                    </p>
-                    <a href="contato.html" class="inline-block bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg btn-hover">
-                        <i class="fas fa-comments mr-2"></i>
-                        Solicitar Orçamento
-                    </a>
-                </div>
-            </div>
+        
         </div>
     </section>
 
-    <!-- ===== SEÇÃO GALERIA DO ATELIÊ =====
-         Imagens do processo e ambiente
-    -->
-    <section class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Nosso Espaço</h2>
-                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-                    Um ambiente acolhedor onde a criatividade flui e cada peça ganha vida
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Imagem 1: Mesa de Trabalho -->
-                <div class="bg-gradient-to-br from-amber-600 to-amber-800 h-64 rounded-lg flex items-center justify-center card-hover animate-on-scroll">
-                    <div class="text-center text-white">
-                        <i class="fas fa-desk text-6xl mb-4"></i>
-                        <h4 class="text-xl font-semibold">Mesa de Trabalho</h4>
-                        <p class="text-sm opacity-90">Onde a magia acontece</p>
-                    </div>
-                </div>
-                
-                <!-- Imagem 2: Organização de Fios -->
-                <div class="bg-gradient-to-br from-purple-600 to-purple-800 h-64 rounded-lg flex items-center justify-center card-hover animate-on-scroll">
-                    <div class="text-center text-white">
-                        <i class="fas fa-layer-group text-6xl mb-4"></i>
-                        <h4 class="text-xl font-semibold">Organização</h4>
-                        <p class="text-sm opacity-90">Fios e materiais organizados</p>
-                    </div>
-                </div>
-                
-                <!-- Imagem 3: Ferramentas -->
-                <div class="bg-gradient-to-br from-green-600 to-green-800 h-64 rounded-lg flex items-center justify-center card-hover animate-on-scroll">
-                    <div class="text-center text-white">
-                        <i class="fas fa-toolbox text-6xl mb-4"></i>
-                        <h4 class="text-xl font-semibold">Ferramentas</h4>
-                        <p class="text-sm opacity-90">Equipamentos profissionais</p>
-                    </div>
-                </div>
-                
-                <!-- Imagem 4: Processo Criativo -->
-                <div class="bg-gradient-to-br from-pink-600 to-pink-800 h-64 rounded-lg flex items-center justify-center card-hover animate-on-scroll">
-                    <div class="text-center text-white">
-                        <i class="fas fa-magic text-6xl mb-4"></i>
-                        <h4 class="text-xl font-semibold">Processo Criativo</h4>
-                        <p class="text-sm opacity-90">Criação em andamento</p>
-                    </div>
-                </div>
-                
-                <!-- Imagem 5: Acabamentos -->
-                <div class="bg-gradient-to-br from-blue-600 to-blue-800 h-64 rounded-lg flex items-center justify-center card-hover animate-on-scroll">
-                    <div class="text-center text-white">
-                        <i class="fas fa-check-circle text-6xl mb-4"></i>
-                        <h4 class="text-xl font-semibold">Acabamentos</h4>
-                        <p class="text-sm opacity-90">Detalhes finais</p>
-                    </div>
-                </div>
-                
-                <!-- Imagem 6: Peças Prontas -->
-                <div class="bg-gradient-to-br from-red-600 to-red-800 h-64 rounded-lg flex items-center justify-center card-hover animate-on-scroll">
-                    <div class="text-center text-white">
-                        <i class="fas fa-award text-6xl mb-4"></i>
-                        <h4 class="text-xl font-semibold">Peças Prontas</h4>
-                        <p class="text-sm opacity-90">Resultado final</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 border-t border-gray-700 py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <div class="text-3xl font-bold gradient-text mb-4">AC</div>
-                    <p class="text-gray-300 mb-4">Ateliê de Criações - Onde cada peça conta uma história única.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="bg-amber-600 p-3 rounded-full hover:bg-amber-700 transition-colors">
-                            <i class="fab fa-instagram text-white"></i>
-                        </a>
-                        <a href="#" class="bg-amber-600 p-3 rounded-full hover:bg-amber-700 transition-colors">
-                            <i class="fab fa-facebook text-white"></i>
-                        </a>
-                        <a href="#" class="bg-amber-600 p-3 rounded-full hover:bg-amber-700 transition-colors">
-                            <i class="fab fa-whatsapp text-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-xl font-semibold mb-4 text-amber-500">Links Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-300 hover:text-amber-500 transition-colors">Home</a></li>
-                        <li><a href="loja.html" class="text-gray-300 hover:text-amber-500 transition-colors">Loja</a></li>
-                        <li><a href="logomarca.html" class="text-gray-300 hover:text-amber-500 transition-colors">Logomarca</a></li>
-                        <li><a href="atelie.html" class="text-amber-500 font-semibold">Ateliê</a></li>
-                        <li><a href="contato.html" class="text-gray-300 hover:text-amber-500 transition-colors">Contato</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-xl font-semibold mb-4 text-amber-500">Contato</h4>
-                    <div class="space-y-2 text-gray-300">
-                        <p><i class="fas fa-envelope mr-2 text-amber-500"></i> contato@ac-atelie.com</p>
-                        <p><i class="fas fa-phone mr-2 text-amber-500"></i> (31) 99999-9999</p>
-                        <p><i class="fas fa-map-marker-alt mr-2 text-amber-500"></i> Nova Era, MG</p>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 AC - Ateliê de Criações. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>

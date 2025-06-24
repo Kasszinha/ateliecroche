@@ -42,7 +42,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #fb7185, #f43f5e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -54,7 +54,7 @@
 
 .btn-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 10px 25px rgba(251, 113, 133, 0.3);
 }
 
 .card-hover {
@@ -79,7 +79,7 @@
   left: 50%;
   margin-left: -8px;
   margin-top: -8px;
-  border: 2px solid #ffffff;
+  border: 2px solid #000;
   border-radius: 50%;
   border-top-color: transparent;
   animation: spin 1s linear infinite;
