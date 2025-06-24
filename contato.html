@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC - Contato | Fale Conosco</title>
+    <meta name="description" content="Entre em contato com o AC - Ateliê de Criações. Solicite orçamentos, tire dúvidas e veja depoimentos de clientes satisfeitos.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-modern">
+    <header class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">AC</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-amber-500 transition-colors">Home</a>
+                    <a href="loja.html" class="hover:text-amber-500 transition-colors">Loja</a>
+                    <a href="logomarca.html" class="hover:text-amber-500 transition-colors">Logomarca</a>
+                    <a href="atelie.html" class="hover:text-amber-500 transition-colors">Ateliê</a>
+                    <a href="contato.html" class="text-amber-500 font-semibold">Contato</a>
+                </div>
+                <button class="md:hidden text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Home</a>
+                    <a href="loja.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Loja</a>
+                    <a href="logomarca.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Logomarca</a>
+                    <a href="atelie.html" class="hover:text-amber-500 transition-colors" onclick="toggleMenu()">Ateliê</a>
+                    <a href="contato.html" class="text-amber-500 font-semibold" onclick="toggleMenu()">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pt-32 pb-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">Fale Conosco</h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Estamos aqui para transformar suas ideias em realidade. Entre em contato e vamos criar algo especial juntos.
+                </p>
+                <div class="flex justify-center space-x-8 text-amber-500">
+                    <div class="text-center">
+                        <i class="fas fa-comments text-3xl mb-2"></i>
+                        <p class="text-sm">Atendimento Personalizado</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-clock text-3xl mb-2"></i>
+                        <p class="text-sm">Resposta Rápida</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-heart text-3xl mb-2"></i>
+                        <p class="text-sm">Feito com Carinho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="animate-on-scroll">
+                    <h2 class="text-3xl font-bold mb-8 text-amber-500">Envie sua Mensagem</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="nome" class="block text-sm font-medium text-gray-300 mb-2">
+                                <i class="fas fa-user mr-2 text-amber-500"></i>
+                                Nome Completo *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                required
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-400"
+                                placeholder="Seu nome completo"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
+                                <i class="fas fa-envelope mr-2 text-amber-500"></i>
+                                Email *
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-400"
+                                placeholder="seu@email.com"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="telefone" class="block text-sm font-medium text-gray-300 mb-2">
+                                <i class="fas fa-phone mr-2 text-amber-500"></i>
+                                Telefone
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="telefone" 
+                                name="telefone"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-400"
+                                placeholder="(31) 99999-9999"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="servico" class="block text-sm font-medium text-gray-300 mb-2">
+                                <i class="fas fa-tags mr-2 text-amber-500"></i>
+                                Tipo de Serviço *
+                            </label>
+                            <select 
+                                id="servico" 
+                                name="servico" 
+                                required
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
+                            >
+                                <option value="">Selecione um serviço</option>
+                                <option value="encomenda-personalizada">Encomenda Personalizada</option>
+                                <option value="roupas">Roupas e Vestuário</option>
+                                <option value="acessorios">Acessórios</option>
+                                <option value="bebe">Enxoval de Bebê</option>
+                                <option value="decoracao">Decoração</option>
+                                <option value="reparo">Reparo/Ajuste</option>
+                                <option value="duvidas">Dúvidas Gerais</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensagem" class="block text-sm font-medium text-gray-300 mb-2">
+                                <i class="fas fa-comment mr-2 text-amber-500"></i>
+                                Mensagem *
+                            </label>
+                            <textarea 
+                                id="mensagem" 
+                                name="mensagem" 
+                                rows="5" 
+                                required
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-400 resize-vertical"
+                                placeholder="Conte-nos sobre sua ideia, medidas necessárias, cores preferidas, prazo desejado e qualquer detalhe importante..."
+                            ></textarea>
+                        </div>
+
+                        <div>
+                            <label for="orcamento" class="block text-sm font-medium text-gray-300 mb-2">
+                                <i class="fas fa-dollar-sign mr-2 text-amber-500"></i>
+                                Faixa de Orçamento (Opcional)
+                            </label>
+                            <select 
+                                id="orcamento" 
+                                name="orcamento"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
+                            >
+                                <option value="">Prefiro não informar</option>
+                                <option value="ate-100">Até R$ 100</option>
+                                <option value="100-200">R$ 100 - R$ 200</option>
+                                <option value="200-500">R$ 200 - R$ 500</option>
+                                <option value="500-1000">R$ 500 - R$ 1.000</option>
+                                <option value="acima-1000">Acima de R$ 1.000</option>
+                            </select>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full bg-amber-600 hover:bg-amber-700 px-6 py-4 rounded-lg font-semibold text-lg btn-hover transition-all duration-300"
+                        >
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Enviar Mensagem
+                        </button>
+
+                        <p class="text-sm text-gray-400 text-center">
+                            <i class="fas fa-shield-alt mr-1 text-amber-500"></i>
+                            Seus dados estão seguros conosco e não serão compartilhados com terceiros.
+                        </p>
+                    </form>
+                </div>
+
+                <div class="animate-on-scroll">
+                    <h2 class="text-3xl font-bold mb-8 text-amber-500">Outras Formas de Contato</h2>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="bg-gray-700 p-6 rounded-lg card-hover">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-600 p-3 rounded-full mr-4">
+                                    <i class="fab fa-whatsapp text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-white">WhatsApp</h3>
+                                    <p class="text-gray-300">Resposta mais rápida</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                Fale conosco diretamente pelo WhatsApp para um atendimento mais ágil e personalizado.
+                            </p>
+                            <a href="https://wa.me/5531999999999" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg font-semibold btn-hover">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                (31) 99999-9999
+                            </a>
+                        </div>
+
+                        <div class="bg-gray-700 p-6 rounded-lg card-hover">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-600 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-white">Email</h3>
+                                    <p class="text-gray-300">Para orçamentos detalhados</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                Envie fotos de referência, medidas e detalhes do seu projeto por email.
+                            </p>
+                            <a href="mailto:contato@ac-atelie.com" class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-semibold btn-hover">
+                                <i class="fas fa-envelope mr-2"></i>
+                                contato@ac-atelie.com
+                            </a>
+                        </div>
+
+                        <div class="bg-gray-700 p-6 rounded-lg card-hover">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-gradient-to-r from-purple-600 to-pink-600 p-3 rounded-full mr-4">
+                                    <i class="fab fa-instagram text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-white">Instagram</h3>
+                                    <p class="text-gray-300">Veja nosso trabalho</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mb-4">
+                                Acompanhe nossos projetos, processos criativos e novidades no Instagram.
+                            </p>
+                            <a href="#" target="_blank" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-4 py-2 rounded-lg font-semibold btn-hover">
+                                <i class="fab fa-instagram mr-2"></i>
+                                @ac_atelie
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-600 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-white">
+                            <i class="fas fa-clock mr-2"></i>
+                            Horário de Atendimento
+                        </h3>
+                        <div class="space-y-2 text-white">
+                            <div class="flex justify-between">
+                                <span>Segunda a Sexta:</span>
+                                <span class="font-semibold">9h às 18h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Sábado:</span>
+                                <span class="font-semibold">9h às 14h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Domingo:</span>
+                                <span class="font-semibold">Fechado</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-amber-100 mt-4">
+                            <i class="fas fa-info-circle mr-1"></i>
+                            Respondemos mensagens fora do horário comercial em até 24h.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Perguntas Frequentes</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Tire suas dúvidas mais comuns sobre nossos serviços e processos
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="bg-gray-800 rounded-lg animate-on-scroll">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(1)">
+                        <span class="text-lg font-semibold text-white">Quanto tempo leva para fazer uma peça personalizada?</span>
+                        <i class="fas fa-chevron-down text-amber-500 transform transition-transform" id="faq-icon-1"></i>
+                    </button>
+                    <div class="hidden px-6 pb-4" id="faq-content-1">
+                        <p class="text-gray-300">
+                            O tempo varia conforme a complexidade da peça. Geralmente, peças simples levam de 1 a 2 semanas, 
+                            enquanto projetos mais elaborados podem levar de 3 a 4 semanas. Sempre informamos o prazo exato 
+                            durante o orçamento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg animate-on-scroll">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(2)">
+                        <span class="text-lg font-semibold text-white">Como funciona o processo de orçamento?</span>
+                        <i class="fas fa-chevron-down text-amber-500 transform transition-transform" id="faq-icon-2"></i>
+                    </button>
+                    <div class="hidden px-6 pb-4" id="faq-content-2">
+                        <p class="text-gray-300">
+                            Após receber sua solicitação, analisamos todos os detalhes (tipo de peça, materiais, complexidade) 
+                            e enviamos um orçamento detalhado em até 24h. O orçamento inclui valor, prazo e forma de pagamento.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="bg-gray-800 rounded-lg animate-on-scroll">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(3)">
+                        <span class="text-lg font-semibold text-white">Vocês fazem ajustes em peças prontas?</span>
+                        <i class="fas fa-chevron-down text-amber-500 transform transition-transform" id="faq-icon-3"></i>
+                    </button>
+                    <div class="hidden px-6 pb-4" id="faq-content-3">
+                        <p class="text-gray-300">
+                            Sim! Fazemos ajustes e reparos em peças de tricô e crochê. Traga sua peça para avaliarmos 
+                            a viabilidade do ajuste e forneceremos um orçamento específico.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg animate-on-scroll">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(4)">
+                        <span class="text-lg font-semibold text-white">Quais formas de pagamento vocês aceitam?</span>
+                        <i class="fas fa-chevron-down text-amber-500 transform transition-transform" id="faq-icon-4"></i>
+                    </button>
+                    <div class="hidden px-6 pb-4" id="faq-content-4">
+                        <p class="text-gray-300">
+                            Aceitamos PIX, transferência bancária, cartão de débito e crédito. Para encomendas, 
+                            trabalhamos com 50% de entrada e 50% na entrega da peça pronta.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg animate-on-scroll">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(5)">
+                        <span class="text-lg font-semibold text-white">Fazem entrega em outras cidades?</span>
+                        <i class="fas fa-chevron-down text-amber-500 transform transition-transform" id="faq-icon-5"></i>
+                    </button>
+                    <div class="hidden px-6 pb-4" id="faq-content-5">
+                        <p class="text-gray-300">
+                            Sim! Enviamos para todo o Brasil via Correios ou transportadora. O frete é calculado 
+                            conforme o destino e peso da encomenda. Embalamos tudo com muito cuidado para garantir 
+                            que sua peça chegue perfeita.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">O que Nossos Clientes Dizem</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    A satisfação dos nossos clientes é nossa maior recompensa
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg card-hover animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white">Maria Silva</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Encomendei um conjunto para minha filha recém-nascida e ficou simplesmente perfeito! 
+                        A qualidade é excepcional e o carinho em cada detalhe é visível. Super recomendo!"
+                    </p>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg card-hover animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white">João Santos</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Atendimento impecável! Fizeram exatamente o que eu imaginava para o presente da minha esposa. 
+                        Entrega no prazo e qualidade surpreendente. Já virei cliente fiel!"
+                    </p>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg card-hover animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-600 p-3 rounded-full mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white">Ana Costa</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Profissionais incríveis! Transformaram minha ideia em uma peça única e linda. 
+                        O processo foi transparente do início ao fim. Recomendo de olhos fechados!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">Pronto para Começar?</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                    Não espere mais! Entre em contato agora e vamos criar algo especial juntos.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <a href="https://wa.me/5531999999999" target="_blank" class="bg-gradient-to-br from-green-600 to-green-700 p-6 rounded-lg card-hover group">
+                        <i class="fab fa-whatsapp text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                        <p class="text-sm opacity-90">Resposta imediata</p>
+                    </a>
+                    
+                    <a href="mailto:contato@ac-atelie.com" class="bg-gradient-to-br from-blue-600 to-blue-700 p-6 rounded-lg card-hover group">
+                        <i class="fas fa-envelope text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">Email</h3>
+                        <p class="text-sm opacity-90">Orçamento detalhado</p>
+                    </a>
+                    
+                    <a href="#contact-form" class="bg-gradient-to-br from-amber-600 to-amber-700 p-6 rounded-lg card-hover group">
+                        <i class="fas fa-form text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="text-xl font-bold mb-2">Formulário</h3>
+                        <p class="text-sm opacity-90">Informações completas</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 border-t border-gray-700 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-3xl font-bold gradient-text mb-4">AC</div>
+                    <p class="text-gray-300 mb-4">Ateliê de Criações - Onde cada peça conta uma história única.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-amber-600 p-3 rounded-full hover:bg-amber-700 transition-colors">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="bg-amber-600 p-3 rounded-full hover:bg-amber-700 transition-colors">
+                            <i class="fab fa-facebook text-white"></i>
+                        </a>
+                        <a href="https://wa.me/5531999999999" class="bg-amber-600 p-3 rounded-full hover:bg-amber-700 transition-colors">
+                            <i class="fab fa-whatsapp text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-amber-500">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-amber-500 transition-colors">Home</a></li>
+                        <li><a href="loja.html" class="text-gray-300 hover:text-amber-500 transition-colors">Loja</a></li>
+                        <li><a href="logomarca.html" class="text-gray-300 hover:text-amber-500 transition-colors">Logomarca</a></li>
+                        <li><a href="atelie.html" class="text-gray-300 hover:text-amber-500 transition-colors">Ateliê</a></li>
+                        <li><a href="contato.html" class="text-amber-500 font-semibold">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-amber-500">Contato</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2 text-amber-500"></i> contato@ac-atelie.com</p>
+                        <p><i class="fas fa-phone mr-2 text-amber-500"></i> (31) 99999-9999</p>
+                        <p><i class="fas fa-map-marker-alt mr-2 text-amber-500"></i> Nova Era, MG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AC - Ateliê de Criações. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateForm(this)) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                simulateButtonLoading(submitBtn, 2000);
+                
+                setTimeout(() => {
+                    showToast('Mensagem enviada com sucesso! Responderemos em breve.', 'success');
+                    this.reset();
+                }, 2000);
+            }
+        });
+        
+        function toggleFAQ(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            value = value.replace(/(\d{2})(\d)/, '($1) $2');
+            value = value.replace(/(\d{5})(\d)/, '$1-$2');
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>
